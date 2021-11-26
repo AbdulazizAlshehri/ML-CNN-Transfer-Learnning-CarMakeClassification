@@ -13,7 +13,7 @@ Dataset used in this experiment is Stanford Car dataset [source](http://ai.stanf
 ## Augmentation
 
 This image: </br>
-<img src="Graphs/Augmentation_original.jpg" height="150">
+<img src="Graphs/Augmentation_original.jpg" height="140">
 
 Augmented to these 5 images:  </br>
 ![Augmentation Result Images](Graphs/Augmentation2.png?raw=true "Augmentation Result")
