@@ -1,6 +1,13 @@
 # Cars_Classifiers
+
+## About
 Computer Vision project to classify cars picture by make and model
 
+## Dataset
 
-![Augmentation Result Images](Graphs/Augmentation.png?raw=true "Augmentation Result")
+## Augmentation
+
+![Original Image](Graphs/Augmentation_original.jpg?raw=true "Original Image")
+
+![Augmentation Result Images](Graphs/Augmentation2.png?raw=true "Augmentation Result")
 
