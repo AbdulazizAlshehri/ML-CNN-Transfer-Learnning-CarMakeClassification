@@ -9,7 +9,7 @@ Computer Vision project to classify cars picture by make and model. </br>
 
 
 ## Dataset
-Dataset used in this experiment is Stanford Car dataset [source](http://ai.stanford.edu/~jkrause/cars/car_dataset.html), which contains ~16k total images. We splited them as follows: ~9k for training, ~4k images for validation, ~3k for testing. </br>
+Dataset used in this experiment is Stanford Car dataset [source](http://ai.stanford.edu/~jkrause/cars/car_dataset.html), which contains ~16k total images. We splited them as follows: ~9k for training, ~4k images for validation, ~3k for testing. </br> 
 ![Dataset Example Image](Graphs/dataset.jpg?raw=true "Dataset Example")
 
 
