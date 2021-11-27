@@ -2,7 +2,7 @@
 <!-- ![banner Image](Graphs/class_montage.jpg?raw=true "banner") -->
 
 # Deep Learning Car Classification
-credit: [Abdulaziz Alsshe](https://github.com/AbdulazizAlshehri) & [Ibrahin Alzuhairi](https://github.com/ibalzuhairi)
+credit: [Abdulaziz Alshehri](https://github.com/AbdulazizAlshehri) & [Ibrahin Alzuhairi](https://github.com/ibalzuhairi)
 
 ## About
 Computer Vision project to classify cars picture by make and model. 
