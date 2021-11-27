@@ -1,5 +1,5 @@
 
-![banner Image](Graphs/class_montage.jpg?raw=true "banner")
+<!-- ![banner Image](Graphs/class_montage.jpg?raw=true "banner") -->
 
 # Deep Learning Car Classification
 
