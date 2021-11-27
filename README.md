@@ -15,8 +15,28 @@ Dataset used in this experiment is Stanford Car dataset [source](http://ai.stanf
 </br> 
 ![Dataset Example Image](Graphs/dataset.jpg?raw=true "Dataset Example")
 
+### Preparing Dataset
+The original dataset had 16k images stored in one folder, where all labels provided in .mat file.
+1) restructuring image files to the following LabelID/Imagefile.jpg
+
+2) custom train_test split per class (Note: this will create a balanced split across all classes)
+
+![Dataset_Preparation](Graphs/PreparingDataset.JPG?raw=true "Dataset Example")
+
+### Preprocessing Steps
+
+a CVPre class was created to contain all preprocessing functions. this was done to make it easy to update preprocessing steps in one place across all machines
+
+![Dataset_PreProcessing](Graphs/Preprocessing.JPG?raw=true "PreProcessing")
 
 ## 2. Experiment
+### Workflow
+Since we intended to perform many experiments on more than remote machine. MLFLow was a great tool to track experiments in one place, and streamline artificat file storage.
+
+
+![Experiment_Workflow](Graphs/workflow.JPG?raw=true "workflow")
+
+Note: while MLFLow did work on local network. Network related problems prevented access from remote machines. Hence, it was leftout due to time constraints
 
 ### ShalowNet Only
 
