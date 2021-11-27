@@ -18,9 +18,9 @@ Dataset used in this experiment is Stanford Car dataset [source](http://ai.stanf
 
 ## 2. Experiment
 
-### ShalowNet Only
+### - ShalowNet Only
 
-### MobileNet Only
+### - MobileNet Only
 
 ### VGG16 Only
 
