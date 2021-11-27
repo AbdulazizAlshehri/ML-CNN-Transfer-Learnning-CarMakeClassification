@@ -23,6 +23,12 @@ The original dataset had 16k images stored in one folder, where all labels provi
 
 ![Dataset_Preparation](Graphs/PreparingDataset.JPG?raw=true "Dataset Example")
 
+### Preprocessing Steps
+
+a CVPre class was created to contain all preprocessing functions. this was done to make it easy to update preprocessing steps in one place across all machines
+
+![Dataset_PreProcessing](Graphs/Preprocessing.JPG?raw=true "PreProcessing")
+
 ## 2. Experiment
 
 ### ShalowNet Only
