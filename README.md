@@ -30,6 +30,13 @@ a CVPre class was created to contain all preprocessing functions. this was done 
 ![Dataset_PreProcessing](Graphs/Preprocessing.JPG?raw=true "PreProcessing")
 
 ## 2. Experiment
+### Workflow
+Since we intended to perform many experiments on more than remote machine. MLFLow was a great tool to track experiments in one place, and streamline artificat file storage.
+
+
+![Experiment_Workflow](Graphs/workflow.JPG?raw=true "workflow")
+
+Note: while MLFLow did work on local network. Network related problems prevented access from remote machines. Hence, it was leftout due to time constraints
 
 ### ShalowNet Only
 
