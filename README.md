@@ -27,4 +27,10 @@ Due to the small number of training data image-augmentation applied to the train
 the folllowwing 5 new images created:
 ![Augmentation Result Images](Graphs/Augmentation2.png?raw=true "Augmentation Result")
 
+#### Regularization
+
+## Results
+
+## Conclusion
+
 
