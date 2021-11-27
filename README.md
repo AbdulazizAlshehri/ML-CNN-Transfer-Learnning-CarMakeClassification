@@ -15,6 +15,13 @@ Dataset used in this experiment is Stanford Car dataset [source](http://ai.stanf
 </br> 
 ![Dataset Example Image](Graphs/dataset.jpg?raw=true "Dataset Example")
 
+### Preparing Dataset
+The original dataset had 16k images stored in one folder, where all labels provided in .mat file.
+1) restructuring image files to the following LabelID/Imagefile.jpg
+
+2) custom train_test split per class (Note: this will create a balanced split across all classes)
+
+![Dataset_Preparation](Graphs/PreparingDataset.JPG?raw=true "Dataset Example")
 
 ## 2. Experiment
 
