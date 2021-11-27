@@ -17,11 +17,11 @@ Dataset used in this experiment is Stanford Car dataset [source](http://ai.stanf
 
 ## Augmentation
 
-This image: 
+Due to the small number of training data image-augmentation applied to it (i.e. scaling, rotation, brightness), for example the following image:
 </br>
 <img src="Graphs/Augmentation_original.jpg" height="140">
 
-Augmented to these 5 images: 
+by applying augmentation, the folllowwing 5 new images created:
 ![Augmentation Result Images](Graphs/Augmentation2.png?raw=true "Augmentation Result")
 
 
