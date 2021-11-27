@@ -17,11 +17,11 @@ Dataset used in this experiment is Stanford Car dataset [source](http://ai.stanf
 
 ## Augmentation
 
-Due to the small number of training data image-augmentation applied to the training data (i.e. scaling, rotation, brightness) to avoide overfitting, for example the following image:
+Due to the small number of training data image-augmentation applied to the training data (i.e. scaling, rotation, brightness) to avoide overfitting, for example by applying augmentation on the following image:
 </br>
 <img src="Graphs/Augmentation_original.jpg" height="140">
 
-by applying augmentation, the folllowwing 5 new images created:
+the folllowwing 5 new images created:
 ![Augmentation Result Images](Graphs/Augmentation2.png?raw=true "Augmentation Result")
 
 
