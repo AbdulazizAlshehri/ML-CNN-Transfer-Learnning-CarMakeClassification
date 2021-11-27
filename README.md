@@ -22,7 +22,6 @@ This image:
 <img src="Graphs/Augmentation_original.jpg" height="140">
 
 Augmented to these 5 images: 
-</br></br>
 ![Augmentation Result Images](Graphs/Augmentation2.png?raw=true "Augmentation Result")
 
 
