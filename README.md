@@ -4,27 +4,27 @@
 # Deep Learning Car Classification
 credit: [Abdulaziz Alsshe](https://github.com/AbdulazizAlshehri) & [Ibrahin Alzuhairi](https://github.com/ibalzuhairi)
 
-## 1. About
+## About
 Computer Vision project to classify cars picture by make and model. 
 </br>
 ![Car Classification Cam Image](Graphs/car_classification_security_cam.png?raw=true "Car Classification Cam")
 
 
-## 2. Dataset
+## 1. Dataset
 Dataset used in this experiment is Stanford Car dataset [source](http://ai.stanford.edu/~jkrause/cars/car_dataset.html), which contains ~16k total images. We splited them as follows: ~9k for training, ~4k images for validation, ~3k for testing. 
 </br> 
 ![Dataset Example Image](Graphs/dataset.jpg?raw=true "Dataset Example")
 
 
-## 3. Experiment
+## 2. Experiment
 
-#### ShalowNet Only
+### ShalowNet Only
 
-#### MobileNet Only
+### MobileNet Only
 
-#### VGG16 Only
+### VGG16 Only
 
-#### Augmentation
+### Augmentation
 Due to the small number of training data image-augmentation applied to the training data (i.e. scaling, rotation, brightness) to avoide overfitting, for example by applying augmentation on the following image:
 </br>
 <img src="Graphs/Augmentation_original.jpg" height="140">
@@ -32,16 +32,16 @@ Due to the small number of training data image-augmentation applied to the train
 the folllowwing 5 new images created:
 ![Augmentation Result Images](Graphs/Augmentation2.png?raw=true "Augmentation Result")
 
-#### MobileNet with Augmentation
+### MobileNet with Augmentation
 
-#### VGG16 with Augmentation
+### VGG16 with Augmentation
 
-#### Regularization
+### Regularization
 
-#### MobileNet with Augmentation and Regularization
+### MobileNet with Augmentation and Regularization
 
-#### VGG16 with Augmentation and Regularization
+### VGG16 with Augmentation and Regularization
 
-## 4. Conclusion
+## 3. Conclusion
 
 
