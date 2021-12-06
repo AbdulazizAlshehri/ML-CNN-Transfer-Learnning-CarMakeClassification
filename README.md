@@ -47,7 +47,7 @@ On initial experiments troubleshooting, we realize what caused stagnation on our
 
 ### Learning Rates Experiment:
 to explore the impact of choosing a good learning rate. we've ran multiple experiments with different learnning rates on pre-trained MobileNetV2.
-![LR_Exp](Graphs/LRExp.JPG?raw=true "LRExp Example")
+![LR_Exp](Graphs/LRexp.JPG?raw=true "LRExp Example")
 Above chart shows that a large learning rate will speedup initial training. However, if left as is it will cause the model to overfit.
 This highlight the benefit of using LR scheduler, or reduce on plateau.
 ### MobileNet Only
