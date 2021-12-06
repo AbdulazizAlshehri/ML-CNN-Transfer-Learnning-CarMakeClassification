@@ -38,8 +38,18 @@ Since we intended to perform many experiments on more than remote machine. MLFLo
 
 Note: while MLFLow did work on local network. Network related problems prevented access from remote machines. Hence, it was leftout due to time constraints
 
-### ShalowNet Only
+## Earlier experiments:
+On initial experiments troubleshooting, we realize what caused stagnation on our loss curve for transfer learning of VGG16, and MobileNetV2.
+1- rescaling training dataset between -1 and 1 was miscounted step. Noticable performance increase after rescaling.
+2- pre-trained VGG16 on ImageNet,  training set were rescaled to the mean and std of ImageNet colors. Another performance increase was noticed after rescaling our training set to the same mean and std of ImageNet.
+3- Learning rate choice was either too small or too big. ReduceOnPlateau was used to adjust LR on stagnation. 
 
+
+### Learning Rates Experiment:
+to explore the impact of choosing a good learning rate. we've ran multiple experiments with different learnning rates on pre-trained MobileNetV2.
+![LR_Exp](Graphs/LRExp.JPG?raw=true "LRExp Example")
+Above chart shows that a large learning rate will speedup initial training. However, if left as is it will cause the model to overfit.
+This highlight the benefit of using LR scheduler, or reduce on plateau.
 ### MobileNet Only
 
 ### VGG16 Only
