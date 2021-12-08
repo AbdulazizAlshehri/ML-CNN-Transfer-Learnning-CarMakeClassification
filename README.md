@@ -50,9 +50,17 @@ to explore the impact of choosing a good learning rate. we've ran multiple exper
 ![LR_Exp](Graphs/LRexp.JPG?raw=true "LRExp Example")
 Above chart shows that a large learning rate will speedup initial training. However, if left as is it will cause the model to overfit.
 This highlight the benefit of using LR scheduler, or reduce on plateau.
-### MobileNet Only
 
-### VGG16 Only
+### Rescaling & Normalization:
+One of the miscounted step, is to rescale and normalize training set in the same way the ImageNet pre-trained model was processed.
+<br> Below charts show the difference in performance on transfered VGG16  after rescaling between -1 and 1,  and normalizing training set with ImageNet mean and STD.
+![VGG16-rescaling](Graphs/VGG-rescaling.jpg?raw=true "VGG16- rescaling")
+![VGG16-normalization](Graphs/VGG-normalizing.jpg?raw=true "VGG16- normalization")
+
+ImageNet colors means [123.68, 116.779, 103.939] and std = 64 
+### MobileNet 
+
+### VGG16 
 
 ### Augmentation
 Due to the small number of training data image-augmentation applied to the training data (i.e. scaling, rotation, brightness) to avoide overfitting, for example by applying augmentation on the following image:
