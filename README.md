@@ -58,8 +58,14 @@ One of the miscounted step, is to rescale and normalize training set in the same
 ![VGG16-normalization](Graphs/VGG-normalizing.jpg?raw=true "VGG16- normalization")
 
 ImageNet colors means [123.68, 116.779, 103.939] and std = 64 
-### MobileNet 
+### VGG16 Regularization:
 
+Various Dropout configurations were tested. 0.5 ,0.2, 0.3 between the last 3 Dense layers of VGG16 model. Below table shows the difference in results for each experiment.
+![VGG16-Dropout](Graphs/VGG-Dropout.jpg?raw=true "VGG16- Dropout")
+for experiment DO 0.5 , we noticed that validation accuracy was greater than training accuracy after 32 Epoch. which signal that a drop out of 0.5 is causing underfitting.
+Dropout value of 0.3 is performing better than 0.2. with 5% difference in training accuracy, and only 1% difference in validation accuracy.
+
+Note: a model of DO 0.3 on epoch 23 was choosen for fine-tunning that had an accuracy of 68% and validation accuracy %46.
 ### VGG16 
 
 ### Augmentation
