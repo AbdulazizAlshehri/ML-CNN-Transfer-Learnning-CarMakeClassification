@@ -64,7 +64,7 @@ Various Dropout configurations were tested. 0.5 ,0.2, 0.3 between the last 3 Den
 ![VGG16-Dropout](Graphs/VGG-Dropout.jpg?raw=true "VGG16- Dropout")
 for experiment DO 0.5 , we noticed that validation accuracy was greater than training accuracy after 32 Epoch. which signal that a drop out of 0.5 is causing underfitting.
 Dropout value of 0.3 is performing better than 0.2. with 5% difference in training accuracy, and only 1% difference in validation accuracy.
-
+![VGG16-Dropout2](Graphs/VGG-Dropout2.jpg?raw=true "VGG16- Dropout2")
 Note: a model of DO 0.3 on epoch 23 was choosen for fine-tunning that had an accuracy of 68% and validation accuracy %46.
 ### VGG16 
 
