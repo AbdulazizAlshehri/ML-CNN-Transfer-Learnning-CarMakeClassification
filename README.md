@@ -64,8 +64,17 @@ Various Dropout configurations were tested. 0.5 ,0.2, 0.3 between the last 3 Den
 ![VGG16-Dropout](Graphs/VGG-Dropout.jpg?raw=true "VGG16- Dropout")
 for experiment DO 0.5 , we noticed that validation accuracy was greater than training accuracy after 32 Epoch. which signal that a drop out of 0.5 is causing underfitting.
 Dropout value of 0.3 is performing better than 0.2. with 5% difference in training accuracy, and only 1% difference in validation accuracy.
-![VGG16-Dropout2](Graphs/VGG-Dropout2.jpg?raw=true "VGG16- Dropout2")
-Note: a model of DO 0.3 on epoch 23 was choosen for fine-tunning that had an accuracy of 68% and validation accuracy %46.
+![VGG16-Dropout3](Graphs/VGG-Dropout3.jpg?raw=true "VGG16- Dropout2")
+Note: a model of from DO 0.3 + Maxnorm=3  on epoch 23 was choosen for fine-tunning that had an accuracy of 41% and validation accuracy %40.
+
+### VGG16 Fine-tunning:
+Fine-tunning is the process of unfreezing chunk of layers to adjust pretrained weights to our custom dataset. 
+<br>
+we've unfreezed frozen layers by chunk of 4. Thus, last 8, 12, then 16 (all layers). Below chart shows the learning curve of our model. 
+![VGG16-FineTunning](Graphs/VGG-FineTunning.jpg?raw=true "VGG16- FineTunning")
+with Fine-Tunning, we've observed a boost in validation accuracy by %16, from %50 (maximum from feature extraction method) to %66.
+
+Although %66 is not ideal, this is largely due to the high number of classes 196, and low number of images per class.
 ### VGG16 
 
 ### Augmentation
