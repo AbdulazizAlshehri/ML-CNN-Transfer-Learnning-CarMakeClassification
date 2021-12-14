@@ -29,6 +29,14 @@ a CVPre class was created to contain all preprocessing functions. this was done 
 
 ![Dataset_PreProcessing](Graphs/Preprocessing.JPG?raw=true "PreProcessing")
 
+### Augmentation
+Due to the small number of training data image-augmentation applied to the training data (i.e. scaling, rotation, brightness) to avoide overfitting, for example by applying augmentation on the following image:
+</br>
+<img src="Graphs/Augmentation_original.jpg" height="140">
+
+the folllowwing 5 new images created:
+![Augmentation Result Images](Graphs/Augmentation2.png?raw=true "Augmentation Result")
+
 ## 2. Experiment
 ### Workflow
 Since we intended to perform many experiments on more than remote machine. MLFLow was a great tool to track experiments in one place, and streamline artificat file storage.
@@ -74,27 +82,11 @@ we've unfreezed frozen layers by chunk of 4. Thus, last 8, 12, then 16 (all laye
 ![VGG16-FineTunning](Graphs/VGG-FineTunning.jpg?raw=true "VGG16- FineTunning")
 with Fine-Tunning, we've observed a boost in validation accuracy by %16, from %50 (maximum from feature extraction method) to %66.
 
-Although %66 is not ideal, this is largely due to the high number of classes 196, and low number of images per class.
-### VGG16 
+![VGG16-FineTunning10](Graphs/VGG-FineTunning10.jpg?raw=true "VGG16- FineTunning10")
+With further Learnning rate tweaking, we've achieved 72% validation accuracy. giving a total boost of 22%.
+Although %72 is not ideal, this is largely attributed to the high number of classes 196, and low number of images per class.
 
-### Augmentation
-Due to the small number of training data image-augmentation applied to the training data (i.e. scaling, rotation, brightness) to avoide overfitting, for example by applying augmentation on the following image:
-</br>
-<img src="Graphs/Augmentation_original.jpg" height="140">
 
-the folllowwing 5 new images created:
-![Augmentation Result Images](Graphs/Augmentation2.png?raw=true "Augmentation Result")
 
-### MobileNet with Augmentation
-
-### VGG16 with Augmentation
-
-### Regularization
-
-### MobileNet with Augmentation and Regularization
-
-### VGG16 with Augmentation and Regularization
-
-## 3. Conclusion
 
 
