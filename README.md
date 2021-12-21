@@ -8,13 +8,16 @@
 - [Data](http://ai.stanford.edu/~jkrause/cars/car_dataset.html)
 - [Presentation](https://github.com/ibalzuhairi/CNN-Transfer-Learnning-CarMakeClassification/blob/main/Presentation/NN_Presentation.pdf)
 
-## About
-Computer Vision project to classify cars picture by make and model. 
+# About
+People's personality traits can be drawn from the car they drive. For example, a person driving a sports car is likely driven by a young adult who perhaps is more drawn to exciting, travel, luxury items. While a person driving an economic family car is likely to be family-oriented. The idea of this project is to build AI-based targeted advertisements for streets signs. Moreover, the car-make information can be used to estimate the socioeconomic status of mall visitors. Hence, can be used in brands selection, restaurants, and price range. 
+
+In this project, we have applied transfer learning (Feature extraction and Fine -tunning) on pre-trained VGG16, and Mobile NetV2 to Standford Car Make dataset. 
 </br>
+
 ![Car Classification Cam Image](Graphs/car_classification_security_cam.png?raw=true "Car Classification Cam")
 
 
-## 1. Dataset
+# 1. Dataset
 Dataset used in this experiment is Stanford Car dataset [source](http://ai.stanford.edu/~jkrause/cars/car_dataset.html), which contains ~16k total images. We splited them as follows: ~9k for training, ~4k images for validation, ~3k for testing. 
 </br> 
 ![Dataset Example Image](Graphs/dataset.jpg?raw=true "Dataset Example")
@@ -41,7 +44,7 @@ Due to the small number of training data image-augmentation applied to the train
 the folllowwing 5 new images created:
 ![Augmentation Result Images](Graphs/Augmentation2.png?raw=true "Augmentation Result")
 
-## 2. Experiment
+# 2. Experiment
 ### Workflow
 Since we intended to perform many experiments on more than remote machine. MLFLow was a great tool to track experiments in one place, and streamline artificat file storage.
 
@@ -50,7 +53,7 @@ Since we intended to perform many experiments on more than remote machine. MLFLo
 
 Note: while MLFLow did work on local network. Network related problems prevented access from remote machines. Hence, it was leftout due to time constraints
 
-## Earlier experiments:
+# Earlier experiments:
 On initial experiments troubleshooting, we realize what caused stagnation on our loss curve for transfer learning of VGG16, and MobileNetV2.
 1- rescaling training dataset between -1 and 1 was miscounted step. Noticable performance increase after rescaling.
 2- pre-trained VGG16 on ImageNet,  training set were rescaled to the mean and std of ImageNet colors. Another performance increase was noticed after rescaling our training set to the same mean and std of ImageNet.
