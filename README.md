@@ -2,7 +2,11 @@
 <!-- ![banner Image](Graphs/class_montage.jpg?raw=true "banner") -->
 
 # Deep Learning Car Classification
-credit: [Abdulaziz Alshehri](https://github.com/AbdulazizAlshehri) & [Ibrahin Alzuhairi](https://github.com/ibalzuhairi)
+
+# Table of Content
+- [Code]()
+- [Data](http://ai.stanford.edu/~jkrause/cars/car_dataset.html)
+- [Presentation](https://github.com/ibalzuhairi/CNN-Transfer-Learnning-CarMakeClassification/blob/main/Presentation/NN_Presentation.pdf)
 
 ## About
 Computer Vision project to classify cars picture by make and model. 
@@ -87,6 +91,10 @@ With further Learnning rate tweaking, we've achieved 72% validation accuracy. gi
 Although %72 is not ideal, this is largely attributed to the high number of classes 196, and low number of images per class.
 
 
+</br>
+This project was done to fulfill SDAIA T5 Bootcamp requirements.
+
+*Contributors [Ibrahim Alzuhairi](https://github.com/ibalzuhairi) and [Abdulaziz Alshehri](https://github.com/AbdulazizAlshehri)*
 
 
 
